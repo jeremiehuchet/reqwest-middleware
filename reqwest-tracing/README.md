@@ -16,14 +16,14 @@ Attach `TracingMiddleware` to your client to automatically trace HTTP requests:
 # Cargo.toml
 # ...
 [dependencies]
-opentelemetry = "0.18"
+opentelemetry = "0.20"
 reqwest = "0.11"
 reqwest-middleware = "0.1.1"
 reqwest-retry = "0.1.1"
-reqwest-tracing = { version = "0.3.1", features = ["opentelemetry_0_18"] }
+reqwest-tracing = { version = "0.4.1", features = ["opentelemetry_0_18"] }
 tokio = { version = "1.12.0", features = ["macros", "rt-multi-thread"] }
 tracing = "0.1"
-tracing-opentelemetry = "0.18"
+tracing-opentelemetry = "0.20"
 tracing-subscriber = "0.3"
 task-local-extensions = "0.1.4"
 ```
@@ -89,10 +89,10 @@ an opentelemetry version feature:
 ```toml
 [dependencies]
 # ...
-reqwest-tracing = { version = "0.3.1", features = ["opentelemetry_0_18"] }
+reqwest-tracing = { version = "0.4.1", features = ["opentelemetry_0_20"] }
 ```
 
-Available opentelemetry features are `opentelemetry_0_18`, `opentelemetry_0_17`, `opentelemetry_0_16`, `opentelemetry_0_15`, `opentelemetry_0_14` and
+Available opentelemetry features are `opentelemetry_0_20`, `opentelemetry_0_19`, `opentelemetry_0_18`, `opentelemetry_0_17`, `opentelemetry_0_16`, `opentelemetry_0_15`, `opentelemetry_0_14` and
 `opentelemetry_0_13`.
 
 #### License
